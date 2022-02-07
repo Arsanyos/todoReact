@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from 'react';
+<<<<<<< Updated upstream
+=======
+//importing styles
+import '../style/App.css';
+>>>>>>> Stashed changes
 //importing components
 import Form from './Form';
 import TodoList from './TodoList';
 const App = () => {
+<<<<<<< Updated upstream
 //function
+=======
+    //function
+>>>>>>> Stashed changes
     const filterHandler = () => {
         switch (status) {
             case 'completed':
@@ -26,7 +35,10 @@ const App = () => {
     useEffect(() => {
         filterHandler();
     }, [todos, status]);
+<<<<<<< Updated upstream
  
+=======
+>>>>>>> Stashed changes
     return (
         <div className="App">
             <header>
@@ -37,4 +49,8 @@ const App = () => {
         </div>
     );
 }
+<<<<<<< Updated upstream
 export default App;
+=======
+export default App;
+>>>>>>> Stashed changes
