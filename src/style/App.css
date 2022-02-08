@@ -25,7 +25,7 @@
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
-    background: white;
+    background: black;
   }
   form button {
     color: #ff6f47;
@@ -35,7 +35,7 @@
   }
   form button:hover {
     background: #ff6f47;
-    color: white;
+    color: black;
   }
   .todo-container {
     display: flex;
@@ -68,7 +68,7 @@
   .trash-btn,
   .complete-btn {
     background: #ff6f47;
-    color: white;
+    color: black;
     border: none;
     padding: 1rem;
     cursor: pointer;
