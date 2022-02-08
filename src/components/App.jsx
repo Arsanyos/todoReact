@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+//importing styles
+import '../style/App.css';
 //importing components
 import Form from './Form';
 import TodoList from './TodoList';
 const App = () => {
-//function
+    //function
     const filterHandler = () => {
         switch (status) {
             case 'completed':
@@ -26,7 +28,6 @@ const App = () => {
     useEffect(() => {
         filterHandler();
     }, [todos, status]);
- 
     return (
         <div className="App">
             <header>
