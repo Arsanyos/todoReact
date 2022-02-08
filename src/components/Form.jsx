@@ -1,8 +1,17 @@
 import React from 'react';
 //we can write javascript code and function
 
-const Form = () => {
-
+const Form = ({ inputText, setInputText, todos, setTodos}) => {
+ const inputTextHandler = (e) => {
+        setInputText(e.target.value);
+    }
+    const submitTodoHandler = (e) => {
+        e.preventDefault();
+        setTodos([
+            ...todos, { text: inputText, completed: false, id: Math.random() },
+        ]);
+        setInputText("");
+    }
     return (
     <div>
         <form>
@@ -11,7 +20,7 @@ const Form = () => {
                 <i className="fas fa-plus-square"></i>
             </button>
         </form>
-     </div>
+        </div>
     );
 }
 export default Form;
